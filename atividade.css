@@ -1,0 +1,14 @@
+.menu-lateral{
+	background-color: pink;
+}
+#esquerdo{
+	background-color: green;
+	float:left;
+}
+#direito{
+	background-color: blue;
+	float:right;
+}
+.footer{
+	padding: 10%;
+}
