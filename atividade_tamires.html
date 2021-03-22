@@ -1,63 +1,72 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<html lang="pt-br">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="atividade.css">
 	<title>Atividade Tamires</title>
+	<link rel="stylesheet" type="text/css" href="css/atividade.css">
+	<script type="text/javascript" src="js/atividade.js"></script> 
 </head>
 <body>
-<!-- 	<h1>Atividade Tamires</h1>
-
-	<div>
-    <ul class="menu-lateral">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-        <li><a href="#">Item 5</a></li>
-    </ul>
-	</div>
-	<div>
-		<div id="esquerdo">Teste 1</div>
-		<div id="direito">Teste 2</div>
-
-	</div> -->
-
-<div id="geral">
-    <header id="cabecalho">
-    	<h1>Atividade Tamires</h1>
-    </header>
-    <nav id="lateral-esquerda">
-    	<ul class="menu">
-	        <li><a href="#">Item 1</a></li>
-	        <li><a href="#">Item 2</a></li>
-	        <li><a href="#">Item 3</a></li>
-	        <li><a href="#">Item 4</a></li>
-	        <li><a href="#">Item 5</a></li>
-		</ul>        	
-    </nav>
-    <main id="corpo">
-    	<table class="tabela">
-		    <tr>
-		        <td>Item</td>
-		        <td>Descrição</td>
-		        <td>Valor</td>
-		    </tr>
-		    <tr>
-		        <td>1</td>
-		        <td>Item 1</td>
-		        <td>1,00</td>
-		    </tr>
-		    <tr>
-		        <td>2</td>
-		        <td>Item 2</td>
-		        <td>2,00</td>
-		    </tr>
-		</table>
-    </main>
+	<div id="geral">
+		<!-- Cabeçalho -->
+	    <header id="cabecalho">
+	    	<h1>Atividade Tamires</h1>
+	    </header>
+	    <!-- Menu lateral -->
+	    <nav id="lateral-esquerda">
+	    	<ul class="menu">
+	    		<li><a href="#">Home</a></li>
+		        <li><a href="#">Cadastro</a></li>
+			</ul>        	
+	    </nav>
+	    <div id="corpo">
+	    	<h2>Preencha o formulário:</h2>
+	    	<div>
+			<form class="formulario">
+			    <div>
+			        <label>
+			        Nome:
+			        <input type="text" id="nome" placeholder="Digite seu nome..." />
+			    </label>			        
+			    </div>
+			    <div>
+			        <label>
+			        	E-mail:
+			        	<input type="email" id="email" placeholder="Digite seu e-mail..." />
+			        </label>			
+			    </div>
+				<div>
+					<label>
+						Telefone:
+						<input type="tel" id="telefone" placeholder="Digite seu telefone..."/>
+					</label>					
+				</div>			
+			    <button onclick="adicionaLinha('tabela')" class="button">Cadastrar</button>
+			</form>
+			</div>
+			<div>
+				<h3>Usuários cadastrados:</h3>
+				<table id="tabela" class="tabela">
+					<thead>
+						<tr>
+							<th>
+								Nome
+							</th>
+							<th>
+								Email
+							</th>
+							<th>
+								Telefone
+							</th>
+							<th>
+							</th>														
+						</tr>
+					</thead>
+				</table>
+			</div>
+    	</div>
     <div id="lateral-direita">
-    	<img src="img/img.png">
+    	<img id= "img-menina" src="img/img-v.png">
 	</div>
     <footer class="footer" id="rodape">
     	<p>@2021 - Tamires</p>
