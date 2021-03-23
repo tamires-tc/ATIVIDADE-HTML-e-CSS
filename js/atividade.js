@@ -13,7 +13,10 @@ function adicionaLinha(idTabela) {
     telefone.innerHTML =  document.getElementById('telefone').value;
     remover.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
 
+    limpainput();
+
     return false;
+
 }
 
 // funcao remove uma linha da tabela
@@ -21,3 +24,9 @@ function removeLinha(linha) {
   var i=linha.parentNode.parentNode.rowIndex;
   document.getElementById('tabela').deleteRow(i);
 }    
+
+function limpainput(){
+    document.getElementById("nome").value="";
+    document.getElementById("email").value="";
+    document.getElementById("telefone").value="";
+}
